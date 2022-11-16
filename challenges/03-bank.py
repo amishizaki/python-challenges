@@ -2,14 +2,7 @@ class BankAccount():
     def __init__(self):
         self.balance = 40000
         print("Welcome to Chase bank.")
-        prompt = input('What would you like to do? (deposit, withdraw, check_balance)\n')
-        if (prompt == 'deposit'):
-            self.deposit
-        elif (prompt == 'withdraw'):
-            self.withdraw
-        elif (prompt == 'check_balance'):
-            print(self.balance)
-        # double_check = input("Anything else you'd like to do? (y/n) ")
+        
     
     def __str__(self):
         status = (f'balance: {self.balance}')
@@ -24,6 +17,15 @@ class BankAccount():
         return amount
 
 my_acct = BankAccount()
+print (my_acct)
+prompt = input('What would you like to do? (deposit, withdraw, check_balance)\n')
+if (prompt == 'deposit'):
+    my_acct.deposit
+elif (prompt == 'withdraw'):
+    my_acct.withdraw
+elif (prompt == 'check_balance'):
+    print(my_acct.balance)
+# double_check = input("Anything else you'd like to do? (y/n) ")
 
 
 
